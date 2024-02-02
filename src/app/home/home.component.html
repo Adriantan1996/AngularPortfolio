@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <!--About Me -->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <!--Profile Heading -->
+        <h2>About Me</h2>
+        <!-- Profile Picture -->
+        <img
+          src="../../assets/ProfilePicture.jpg"
+          alt="profile Picture"
+          width="300"
+          height="300"
+          class="rounded-circle my-2"
+        />
+        <!-- Profile Description -->
+        <p class="my-2">
+          I am a dedicated full-stack developer currently employed at Accenture,
+          where I have honed my skills in web development over the past three
+          years. Proficient in both MERN (MongoDB, Express.js, React, Node.js)
+          and MEAN (MongoDB, Express.js, Angular, Node.js) stacks, I also
+          possess expertise in Python. My commitment to professional growth is
+          evident through my continuous learning endeavors, always staying
+          abreast of the latest industry trends and technologies. Currently, I
+          am on the verge of acquiring an AWS Developer certificate, further
+          solidifying my capabilities in cloud computing. As a dynamic and
+          ambitious developer, I thrive on embracing new challenges and
+          contributing to innovative solutions in the ever-evolving field of
+          technology.
+        </p>
+      </div>
+    </div>
+    <!-- Feature Projects -->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Feature Project</h2>
+        <h4 class="mt-2">{{ featureProject.name }}</h4>
+      </div>
+      <div class="mt-3">
+        <carousel>
+          <div *ngFor="let picture of featureProject.pictures">
+            <slide>
+              <img
+                src="{{ picture }}"
+                alt="slide"
+                style="display: block; width: 100%"
+              />
+            </slide>
+          </div>
+        </carousel>
+      </div>
+
+      <p class="mt-3">{{ featureProject.summary }}</p>
+      <p>Visit the portfolio section to learn more!</p>
+    </div>
+  </div>
+</div>

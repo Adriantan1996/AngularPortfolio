@@ -1,0 +1,74 @@
+<div class="container text-center">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
+    Download PDF Resume
+  </button>
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Work Experience</div>
+          <div style="width: 10.95px">
+            <div style="color: white">
+              {{ isWorkExperienceOpen ? "v" : ">" }}
+            </div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-0">Full-Stack Developer</h2>
+          <h3 class="text-primary">Accenture</h3>
+          <ul>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Typescipt</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group heading="Education">
+        <div style="text-align: left">
+          <h2 class="mb-0">Full-Stack Developer</h2>
+          <h3 class="text-primary">Accenture</h3>
+          <ul>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Typescipt</li>
+          </ul>
+        </div></accordion-group
+      >
+      <accordion-group heading="Certificate">
+        <div style="text-align: left">
+          <h2 class="mb-0">Full-Stack Developer</h2>
+          <h3 class="text-primary">Accenture</h3>
+          <ul>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Typescipt</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group heading="Skills">
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3>Progamming Languages</h3>
+            <ul>
+              <li>React</li>
+              <li>Angular</li>
+              <li>Typescipt</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Framework</h3>
+            <ul>
+              <li>React</li>
+              <li>Angular</li>
+              <li>Typescipt</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
